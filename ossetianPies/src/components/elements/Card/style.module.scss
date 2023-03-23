@@ -1,0 +1,117 @@
+.card {
+  width: 420px;
+  border: 4px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  .background {
+    width: 412px;
+    height: 307px;
+    background: rgba(0, 0, 0, 0.2);
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+  }
+
+  .description {
+    margin: 30px;
+
+    h4 {
+      margin-bottom: 30px;
+    }
+
+    .weight {
+      display: grid;
+      grid-template-columns:  repeat(3, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 30px;
+      margin-bottom: 30px;
+
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 109px;
+        height: 56px; 
+        background-color: transparent;
+        border: 2px solid var(--gray);
+        border-radius: 10px;
+        color: var(--gray);
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: var(--black);
+        color: var(--white);
+        border: 2px solid var(--yellow);
+      }
+
+      .buttonActive {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 109px;
+        height: 56px;
+        background-color: var(--black);
+        border-radius: 10px;
+        color: var(--white);
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .buy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .price {
+        font-size: 36px;
+        font-weight: bold;
+      }
+
+      .add {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 226px;
+        height: 60px;
+        padding: 10px 20px;
+        font-size: 24px;
+        font-weight: bold;
+        border: 2px solid var(--black);
+        border-radius: 30px;
+        cursor: pointer;
+
+        p {
+          color: var(--red);
+        }
+
+        .count {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--red);
+          color: var(--white);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+        }
+
+        &:hover {
+          background-color: var(--black);
+          border: 2px solid var(--yellow);
+
+          p {
+            color: var(--white);
+          }
+
+          .count {
+            background-color: var(--yellow);
+            color: var(--black);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.products {
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  .items {
+    max-width: 1360px;
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    grid-column-gap: 36px;
+    grid-row-gap: 40px;
+  }
+}
