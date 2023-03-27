@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ossetianPies_cheesePotato_1",
+    "img": "img/products/cheesePotato.png",
+    "title": "Пирог с сыром и картофелем",
+    "weight": [0.8],
+    "price": "500"
+  },
+  {
+    "id": "ossetianPies_withMeat_2",
+    "img": "img/products/withMeat.png",
+    "title": "Пирог с мясом",
+    "weight": [0.8, 1, 1.5, 2],
+    "price": "550"
+  },
+  {
+    "id": "ossetianPies_cheeseCurd_3",
+    "img": "img/products/cheeseCurd.png",
+    "title": "Пирог с сыром и творогом",
+    "weight": [0.8, 1, 1.5, 2, 3],
+    "price": "550"
+  }
+]
