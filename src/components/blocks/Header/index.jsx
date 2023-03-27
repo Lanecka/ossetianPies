@@ -1,11 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import logoImg from '../../../assets/img/logo/logotype.jpg';
 import style from './style.module.scss';
 
 const Header = () => {
   return (
     <header className={style.header}>
-      <img src="img/logotype.jpg" alt="logotype" />
+      <img src={logoImg} alt="logotype" />
       <div className={style.button}>
         <div className={style.count}>
           <span className={style.price}>1 745 ₽</span>
