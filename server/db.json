@@ -1,0 +1,509 @@
+{
+  "product": [
+    {
+      "id": "ossetianPies_cheesePotato_1",
+      "img": "img/products/cheesePotato.png",
+      "title": "Пирог с сыром и картофелем",
+      "weight": [
+        0.8
+      ],
+      "price": 500,
+      "categorie": 1,
+      "popular": 3
+    },
+    {
+      "id": "ossetianPies_withMeat_2",
+      "img": "img/products/withMeat.png",
+      "title": "Пирог с мясом",
+      "weight": [
+        0.8,
+        1,
+        1.5,
+        2
+      ],
+      "price": 550,
+      "categorie": 1,
+      "popular": 2
+    },
+    {
+      "id": "ossetianPies_cheeseCurd_3",
+      "img": "img/products/cheesCurd.png",
+      "title": "Пирог с сыром и творогом",
+      "weight": [
+        0.8,
+        1,
+        1.5,
+        2,
+        3
+      ],
+      "price": 550,
+      "categorie": 1,
+      "popular": 10
+    },
+    {
+      "id": "ossetianPies_apples_4",
+      "img": "img/products/apples.png",
+      "title": "Пирог с яблоком",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 500,
+      "categorie": 2,
+      "popular": 4
+    },
+    {
+      "id": "ossetianPies_applesCowberry_5",
+      "img": "img/products/applesCowberry.png",
+      "title": "Пирог с яблоком и брусникой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 570,
+      "categorie": 2,
+      "popular": 5
+    },
+    {
+      "id": "ossetianPies_cherry_6",
+      "img": "img/products/cherry.png",
+      "title": "Пирог с вишней",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 2,
+      "popular": 9
+    },
+    {
+      "id": "ossetianPies_strawberry_7",
+      "img": "img/products/strawberry.png",
+      "title": "Пирог с клубникой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 620,
+      "categorie": 2,
+      "popular": 1
+    },
+    {
+      "id": "ossetianPies_cowberry_8",
+      "img": "img/products/cowberry.png",
+      "title": "Пирог с брусникой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 2,
+      "popular": 6
+    },
+    {
+      "id": "ossetianPies_viennese_9",
+      "img": "img/products/viennes.png",
+      "title": "Пирог «Венский»",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 620,
+      "categorie": 2,
+      "popular": 7
+    },
+    {
+      "id": "ossetianPies_dayNight_10",
+      "img": "img/products/dayNight.png",
+      "title": "Пирог «День и ночь»",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 600,
+      "categorie": 2,
+      "popular": 13
+    },
+    {
+      "id": "ossetianPies_fondness_11",
+      "img": "img/products/fondness.png",
+      "title": "Пирог «Нежность»",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 2,
+      "popular": 12
+    },
+    {
+      "id": "ossetianPies_poppy_12",
+      "img": "img/products/poppy.png",
+      "title": "Пирог «Маковый»",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 720,
+      "categorie": 2,
+      "popular": 11
+    },
+    {
+      "id": "ossetianPies_blueberryCurrant_13",
+      "img": "img/products/blueberryCurrent.png",
+      "title": "Пирог с черникой и смородиной",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 2,
+      "popular": 15
+    },
+    {
+      "id": "ossetianPies_blueberry_14",
+      "img": "img/products/blueberry.png",
+      "title": "Пирог с черникой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 2,
+      "popular": 14
+    },
+    {
+      "id": "ossetianPies_curdCurrant_15",
+      "img": "img/products/curdCurrant.png",
+      "title": "Пирог творожно-черничный",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 2,
+      "popular": 13
+    },
+    {
+      "id": "ossetianPies_curd_16",
+      "img": "img/products/curd.png",
+      "title": "Пирог творожный",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 570,
+      "categorie": 2,
+      "popular": 16
+    },
+    {
+      "id": "ossetianPies_cabbage_17",
+      "img": "img/products/cabbage.png",
+      "title": "Пирог с капустой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 400,
+      "categorie": 3,
+      "popular": 18
+    },
+    {
+      "id": "ossetianPies_cabbageEgg_18",
+      "img": "img/products/cabbageEgg.png",
+      "title": "Пирог c капустой и яйцом",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 430,
+      "categorie": 3,
+      "popular": 19
+    },
+    {
+      "id": "ossetianPies_cabbageMushrum_19",
+      "img": "img/products/cabbageMushrum.png",
+      "title": "Пирог с капустой и грибами",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 450,
+      "categorie": 3,
+      "popular": 17
+    },
+    {
+      "id": "ossetianPies_potato_20",
+      "img": "img/products/potato.png",
+      "title": "Пирог с картофелем",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 380,
+      "categorie": 3,
+      "popular": 21
+    },
+    {
+      "id": "ossetianPies_cheese_21",
+      "img": "img/products/cheese.png",
+      "title": "Пирог c сыром",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 560,
+      "categorie": 4,
+      "popular": 20
+    },
+    {
+      "id": "ossetianPies_cheeseMushrum_22",
+      "img": "img/products/cheeseMushrum.png",
+      "title": "Пирог с сыром и грибами",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 580,
+      "categorie": 4,
+      "popular": 23
+    },
+    {
+      "id": "ossetianPies_chicken_23",
+      "img": "img/products/chicken.png",
+      "title": "Пирог с курицей",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 580,
+      "categorie": 4,
+      "popular": 22
+    },
+    {
+      "id": "ossetianPies_pork_24",
+      "img": "img/products/pork.png",
+      "title": "Пирог cо свининой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 580,
+      "categorie": 4,
+      "popular": 26
+    },
+    {
+      "id": "ossetianPies_beef_25",
+      "img": "img/products/beef.png",
+      "title": "Пирог с говядиной",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 4,
+      "popular": 25
+    },
+    {
+      "id": "ossetianPies_julienne_26",
+      "img": "img/products/julienne.png",
+      "title": "Пирог «Жульен»",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 780,
+      "categorie": 4,
+      "popular": 24
+    },
+    {
+      "id": "ossetianPies_salmon_27",
+      "img": "img/products/salmon.png",
+      "title": "Пирог с сёмгой",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 850,
+      "categorie": 4,
+      "popular": 27
+    },
+    {
+      "id": "ossetianPies_turkeyPotato_28",
+      "img": "img/products/turkey.png",
+      "title": "Пирог с индейкой и картофелем",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 650,
+      "categorie": 4,
+      "popular": 29
+    },
+    {
+      "id": "ossetianPies_turkeyCabbageMushrum_29",
+      "img": "img/products/turkey.png",
+      "title": "Пирог с индейкой и капустой с грибами",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 670,
+      "categorie": 4,
+      "popular": 28
+    },
+    {
+      "id": "ossetianPies_pinkSalmonPotato_30",
+      "img": "img/products/pinkSalmon.png",
+      "title": "Пирог с горбушей и картофелем",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 850,
+      "categorie": 4,
+      "popular": 31
+    },
+    {
+      "id": "ossetianPies_zanderPotato_31",
+      "img": "img/products/salmon.png",
+      "title": "Пирог с судаком и картофелем",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 650,
+      "categorie": 4,
+      "popular": 32
+    },
+    {
+      "id": "ossetianPies_turkeyRiceMushrum_32",
+      "img": "img/products/turkey.png",
+      "title": "Пирог с индейкой и рисом с грибами",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 670,
+      "categorie": 4,
+      "popular": 30
+    },
+    {
+      "id": "ossetianPies_pinkSalmonRice_33",
+      "img": "img/products/pinkSalmon.png",
+      "title": "Пирог с горбушей и рисом",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 640,
+      "categorie": 4,
+      "popular": 33
+    },
+    {
+      "id": "ossetianPies_zanderRice_34",
+      "img": "img/products/salmon.png",
+      "title": "Пирог с судаком и рисом",
+      "weight": [
+        1,
+        1.5,
+        2,
+        2.5,
+        3
+      ],
+      "price": 650,
+      "categorie": 4,
+      "popular": 34
+    }
+  ]
+}

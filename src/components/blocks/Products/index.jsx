@@ -1,16 +1,23 @@
 import Card from '../../elements/Card';
 import style from './style.module.scss';
-import ossPies from '../../../assets/products/osspies.json'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Products = () => {
-  console.log(ossPies)
+  const [product, setProduct] = useState([])
+
+  useEffect(() => {
+    axios.get('http://localhost:3010/product')
+      .then(res => setProduct(res.data))
+  }, [])
+
   return (
     <div className={style.products}>
-      <h2 className={style.title}>Осетинские пироги</h2>
+      <h2 className={style.title}>Все пироги</h2>
       <div className={style.items}>
         {
-          ossPies.map((card) => (
-            <Card {...card} />
+          product.map((card) => (
+            <Card key={card.id} {...card} />
           ))
         }
       </div>

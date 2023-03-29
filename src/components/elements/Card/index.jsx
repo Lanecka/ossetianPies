@@ -24,6 +24,7 @@ const Card = ({ id, img, title, price, weight }) => {
           {
             weight.map((value, index) =>
               <li 
+                key={value}
                 onClick={() => setActiveWeight(index)}
                 className={activeWeight === index ? style.buttonActive : style.button}
               >
