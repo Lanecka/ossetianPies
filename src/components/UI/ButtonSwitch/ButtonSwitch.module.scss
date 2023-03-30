@@ -1,0 +1,57 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  h2 {
+    color: var(--red);
+    margin: 0 20px;
+  }
+
+  .switch {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--red);
+    background: transparent;
+    cursor: pointer;
+
+    .minus {
+      position: absolute;
+      top: 20px;
+      left: 12px;
+    }
+
+    .plus {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    } 
+
+      &:hover {
+        background: rgba(255, 0, 0, 0.1);
+      }
+  }
+
+  &:hover {
+    h2 {
+      color: var(--darkRed);
+    }
+  }
+
+  &:hover > .switch  {
+    border-color: var(--darkRed);
+
+    path {
+      stroke: var(--darkRed);
+    }
+
+    line {
+      stroke: var(--darkRed);
+    }
+  }
+}

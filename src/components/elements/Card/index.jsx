@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from './style.module.scss';
+import style from './Card.module.scss';
 
 const Card = ({ id, img, title, price, weight }) => {
   // Переменная, считает сколько товара добавили

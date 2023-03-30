@@ -1,0 +1,15 @@
+.btnBack {
+  background-color: transparent;
+  padding: 16px 25px;
+  border: 2px solid var(--red);
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--red);
+  text-decoration: none;
+
+  &:hover {
+    border-color: var(--darkRed);
+    color: var(--darkRed);
+  }
+}

@@ -1,0 +1,29 @@
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  img {
+    margin-right: 40px;
+  }
+
+  .description {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h4 {
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+  }
+}
