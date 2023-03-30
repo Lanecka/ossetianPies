@@ -1,0 +1,29 @@
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img{
+    margin-right: 40px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    h4 {
+      width: 525px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    p {
+      width: 405px;
+      font-size: 20px;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+  }
+}

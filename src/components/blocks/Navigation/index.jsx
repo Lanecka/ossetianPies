@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import style from './style.module.scss';
+import style from './Navigation.module.scss';
 
 const Navigation = () => {
   // Состояние активности у индекса элемента в категориях
