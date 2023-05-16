@@ -1,0 +1,40 @@
+.pagination {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li {
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      font-family: 'Source Sans Pro', sans-serif;
+      color: var(--black);
+      text-align: center;
+      width: 45px;
+      height: 45px;
+      line-height: 42px;
+      border: 1px solid var(--gray);
+      border-radius: 30px;
+      margin-right: 10px;
+      background-color: var(--white);
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--black);
+        border-color: var(--yellow);
+        color: var(--white);
+      }
+    }
+  }
+
+  :global {
+    .selected {
+      a {
+        background-color: var(--black);
+        color: var(--white);
+      }
+    }
+  }
+}

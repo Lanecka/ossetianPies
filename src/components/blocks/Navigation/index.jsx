@@ -1,25 +1,48 @@
 import { useState } from 'react';
 import style from './Navigation.module.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { setSort } from '../../../redux/slices/filterSlice';
 
-const Navigation = () => {
-  // Состояние активности у индекса элемента в категориях
-  const [indexCategorie, setIndexCategorie] = useState(0)
+const Navigation = ({ categoryId, onClickCategorie }) => {
   // Открыть/закрыть сортировку
   const [open, setOpen] = useState(false)
-  // Состояние активности у индекса элемента в сортеровке 
-  const [indexSort, setIndexSort] = useState(0)
+
+  const dispatch = useDispatch()
+  const sort = useSelector(state => state.filter.sort)
 
   /** список категорий */
   const categories = ['Все', 'Осетинские', 'Сладкие', 'Овощные', 'Сытные']
   /** Сортировка: Популярности, Цене, Алфавиту */
-  const sortList = ['Популярности', 'Цене', 'Алфавиту']
-
-  /** Выбранный элемент в сортировке */
-  const sortItem = sortList[indexSort]
+  const sortList = [
+    {
+      name: 'Популярности (desk)',
+      sortProperty: 'popular'
+    },
+    {
+      name: 'Популярности (asc)',
+      sortProperty: '-popular'
+    },
+    {
+      name: 'Цене(desk)',
+      sortProperty: 'price'
+    },
+    {
+      name: 'Цене (asc)',
+      sortProperty: '-price'
+    },
+    {
+      name: 'Алфавиту (desk)',
+      sortProperty: 'title'
+    },
+    {
+      name: 'Алфавиту (asc)',
+      sortProperty: '-title'
+    }
+  ]
 
   /** Убираем попап при клике-выбора на список сортировать */
-  const onClickSortItem = (index) => {
-    setIndexSort(index)
+  const onClickSortItem = (obj) => {
+    dispatch(setSort(obj))
     setOpen(false)
   }
 
@@ -30,8 +53,8 @@ const Navigation = () => {
           categories.map((value, index) => (
             <li
               key={index}
-              onClick={() => setIndexCategorie(index)}
-              className={indexCategorie === index ? style.active : style.item}
+              onClick={() => onClickCategorie(index)}
+              className={categoryId === index ? style.active : style.item}
             >
               {value}
             </li>
@@ -44,22 +67,22 @@ const Navigation = () => {
           {
             open ? '⯅ ' : '⯈ '
           }
-          <b>Сортировка по:</b> 
-          <span onClick={() => setOpen(!open)}>{sortItem}</span>
+          <b>Сортировка по:</b>
+          <span onClick={() => setOpen(!open)}>{sort.name}</span>
         </div>
         {
           open &&
-            <ul className={style.choose}>
-              {sortList.map((value, index) => (
-                <li 
-                  key={index}
-                  onClick={() => onClickSortItem(index)}
-                  className={style.item}
-                >
-                    {value}
-                </li>
-              ))}
-            </ul>
+          <ul className={style.choose}>
+            {sortList.map((obj, index) => (
+              <li
+                key={index}
+                onClick={() => onClickSortItem(obj)}
+                className={sort.sortProperty === obj.sortProperty ? style.active : style.item}
+              >
+                {obj.name}
+              </li>
+            ))}
+          </ul>
         }
       </div>
     </div>
