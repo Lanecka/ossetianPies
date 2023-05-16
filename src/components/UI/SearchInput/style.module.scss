@@ -1,0 +1,57 @@
+.search {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    left: 10px;
+    top: 16px
+  }
+
+  .close {
+    width: 24px; 
+    height: 24px; 
+    position: absolute;
+    right: 48px;
+    top: 16px;
+    cursor: pointer;
+
+    &:hover {
+      path {
+        fill: var(--black)
+      }
+      rect {
+        stroke: var(--black)
+      }
+    }
+  }
+
+  input {
+    border: 1px solid var(--gray);
+    padding: 12px 40px 12px 37px;
+    width: 350px;
+    font-size: 24px;
+    color: var(--gray);
+    border-radius: 5px;
+    margin-right: 40px;
+
+    &:hover {
+      border-color: var(--yellow);
+    }
+
+    &:focus {
+      border-color: var(--black);
+      color: var(--black);
+    }
+
+    @media (max-width: 1024px) {
+      margin-right: 20px;
+    }
+
+    @media (max-width: 834px) {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 277px;
+    }
+  }
+
+}

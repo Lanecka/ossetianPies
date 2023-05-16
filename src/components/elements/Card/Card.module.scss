@@ -128,4 +128,48 @@
       }
     }
   }
+
+  @media (max-width: 520px) {
+    width: 280px;
+    border-radius: 10px;
+
+    .background {
+      width: 272px;
+      height: 191px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+
+      img {
+        width: 272px;
+        height: 191px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+      }
+    }
+
+    .description {
+      margin: 20px;
+      height: 398px;
+
+      h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      .weight {
+        grid-template-columns: repeat(2, 1fr);
+        height: 208px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+
+      .buy {
+        flex-direction: column;
+
+        .price {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
 }

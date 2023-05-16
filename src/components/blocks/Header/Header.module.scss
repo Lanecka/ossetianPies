@@ -4,45 +4,99 @@
   justify-content: space-between;
   margin-bottom: 80px;
 
-  .button {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 10px;
-
-    font-size: 24px;
-    font-weight: bold;
-    padding: 15px 10px 15px 20px;
-    color: var(--white);
-    background-color: var(--red);
-    border-radius: 30px;
-    border: 4px solid transparent;
-    cursor: pointer;
+  .logotype {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-decoration: none;
+    color: var(--black);
 
-    .count {
-      .price {
-        margin-right: 10px;
+    img {
+      margin-right: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-size: 16px;
+
+      @media (max-width: 720px) {
+        width: 170px;
       }
     }
 
-    .line {
-      border-left: 4px solid rgba(255, 255, 255, 0.4);
-      height: 40px;
-    }
+    p {
+      color: var(--gray);
 
-    .basket {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .icon {
-        margin-right: 5px;
+      @media (max-width: 720px) {
+        width: 170px;
       }
     }
+  }
 
-    &:hover {
-      background-color: var(--darkRed);
-      border: 4px solid var(--yellow);
+  .interaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10px;
+
+      font-size: 24px;
+      font-weight: bold;
+      padding: 15px 10px 15px 20px;
+      color: var(--white);
+      background-color: var(--red);
+      border-radius: 30px;
+      border: 4px solid transparent;
+      cursor: pointer;
+      text-decoration: none;
+
+      .count {
+        .price {
+          margin-right: 10px;
+        }
+      }
+
+      .line {
+        border-left: 4px solid rgba(255, 255, 255, 0.4);
+        height: 40px;
+      }
+
+      .basket {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+          margin-right: 5px;
+        }
+      }
+
+      &:hover {
+        background-color: var(--darkRed);
+        border: 4px solid var(--yellow);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 834px) {
+    .interaction {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    .logotype {
+      margin-bottom: 20px;
     }
   }
 }

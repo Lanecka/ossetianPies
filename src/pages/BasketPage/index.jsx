@@ -5,8 +5,6 @@ import BasketCard from '../../components/elements/Basket/BasketCard';
 import style from './basketPage.module.scss';
 import ButtonBack from '../../components/UI/ButtonBack';
 
-
-
 const BasketPage = () => {
   return (
     <div className={style.basket}>

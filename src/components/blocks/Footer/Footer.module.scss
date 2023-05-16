@@ -50,7 +50,8 @@ footer {
         display: flex;
         align-items: center;
         cursor: pointer;
-        color: var(--white);;
+        color: var(--white);
+        ;
 
         svg {
           margin-right: 20px;
@@ -62,15 +63,15 @@ footer {
           font-weight: bold;
         }
 
-      &:hover p{
-        color: var(--yellow);
-      }
-
-      &:hover svg {
-        path {
-          fill: var(--yellow)
+        &:hover p {
+          color: var(--yellow);
         }
-      }
+
+        &:hover svg {
+          path {
+            fill: var(--yellow)
+          }
+        }
       }
 
       .media {
@@ -94,5 +95,39 @@ footer {
 
   .autor {
     text-align: center;
+  }
+
+  @media (max-width: 960px) {
+    .container {
+      padding: 20px;
+    }
+
+    .menu {
+      margin-bottom: 20px;
+
+      .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          font-size: 16px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .contacts {
+      margin-bottom: 20px;
+
+      p {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      .link {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
   }
 }
